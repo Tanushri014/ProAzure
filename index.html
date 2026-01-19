@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AWS Learning Demo</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background: #f4f6f9;
+      color:#333;
+    }
+
+    header{
+      background: #232f3e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav{
+      background:#ff9900;
+      padding:10px;
+      text-align:center;
+    }
+
+    nav a{
+      color:#232f3e;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:bold;
+    }
+
+    nav a:hover{
+      text-decoration:underline;
+    }
+
+    .hero{
+      padding:60px 20px;
+      text-align:center;
+      background: linear-gradient(to right, #232f3e, #37475a);
+      color:white;
+    }
+
+    .hero h1{
+      font-size:40px;
+      margin-bottom:15px;
+    }
+
+    .hero p{
+      font-size:18px;
+    }
+
+    .container{
+      padding:40px 20px;
+      max-width:1100px;
+      margin:auto;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:30px;
+      color:#232f3e;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .card{
+      background:white;
+      padding:20px;
+      border-radius:8px;
+      box-shadow:0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover{
+      transform: translateY(-5px);
+    }
+
+    .card h3{
+      color:#ff9900;
+      margin-bottom:10px;
+    }
+
+    .about{
+      background:#ffffff;
+      padding:40px 20px;
+      border-radius:8px;
+      box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    footer{
+      background:#232f3e;
+      color:white;
+      text-align:center;
+      padding:15px;
+      margin-top:40px;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:20px;
+      padding:10px 20px;
+      background:#ff9900;
+      color:#232f3e;
+      text-decoration:none;
+      border-radius:5px;
+      font-weight:bold;
+    }
+
+    .btn:hover{
+      background:#e68a00;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>AWS Learning Demo</h1>
+    <p>Explore Amazon Web Services Basics</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Welcome to AWS Learning</h1>
+    <p>A demo website to understand AWS cloud services and fundamentals</p>
+    <a href="#services" class="btn">Get Started</a>
+  </section>
+
+  <section class="container" id="services">
+    <h2 class="section-title">AWS Core Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>EC2</h3>
+        <p>Elastic Compute Cloud provides scalable virtual servers to run your applications.</p>
+      </div>
+
+      <div class="card">
+        <h3>S3</h3>
+        <p>Simple Storage Service is used to store and retrieve any amount of data securely.</p>
+      </div>
+
+      <div class="card">
+        <h3>RDS</h3>
+        <p>Relational Database Service helps manage databases easily in the cloud.</p>
+      </div>
+
+      <div class="card">
+        <h3>IAM</h3>
+        <p>Identity and Access Management controls user access and permissions.</p>
+      </div>
+
+      <div class="card">
+        <h3>Lambda</h3>
+        <p>Run code without managing servers using serverless computing.</p>
+      </div>
+
+      <div class="card">
+        <h3>CloudWatch</h3>
+        <p>Monitor AWS resources and applications in real-time.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="about">
+    <h2 class="section-title">About This Demo</h2>
+    <div class="about">
+      <p>
+        This website is a simple demonstration of an AWS learning platform created using
+        HTML and CSS in a single file. It helps beginners understand the core AWS services
+        and their basic use cases. You can deploy this static website on AWS S3, EC2, or even
+        on AWS Amplify as part of your practice.
+      </p>
+    </div>
+  </section>
+
+  <section class="container" id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="about">
+      <p>Email: awslearningdemo@gmail.com</p>
+      <p>Phone: +91 98765 43210</p>
+      <p>Location: Pune, India</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 AWS Learning Demo | Designed for Practice & Learning</p>
+  </footer>
+
+</body>
+</html>
